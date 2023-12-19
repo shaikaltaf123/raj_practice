@@ -1,0 +1,29 @@
+AWS---commands:
+
+1. sudo su - (to make current user as root user)
+2. yum update -y (to update the existing packages)
+3. yum install -y httpd (to install httpd that supports website)
+4. systemctl status httpd (to check the status of httpd)
+5. mkdir temp (create a directory named temp)
+6. cd temp/
+7. wget [website URL]  (download zip file of the website)
+8. ls -lrt
+9. unzip complex.zip  (unzip the content of zip file)
+10.ls -lrt
+11.cd complex  (change diractory to complex)
+12.ls -lrt
+13.mv * /var/www/html/
+14.cd /var/www/html/
+15.now browse the website with public ip of linux instance
+16.website may be not visible as httpd,ssh not were enabled.
+17.add inbound rules for these two under "security" tab of instance running.
+18.open security groups in the next screen.
+19.now add these rules under "inbound rules".
+20.HTTP--80--0.0.0.0/0
+21.SSH--22--0.0.0.0/0
+22.HTTPS--443-0.0.0.0/0
+23.systemctl status httpd
+24.systemctl enable httpd
+25.systemctl start httpd
+
+https://www.free-css.com/free-css-templates/page295/guarder
